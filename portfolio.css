@@ -1,0 +1,899 @@
+/* PORTFOLIO.CSS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ececec;
+  font-family: sans-serif;
+}
+
+/* HEADER */
+
+#header {
+  margin: 0;
+  padding: 0;
+}
+
+#header ul {
+  line-height: 40px;
+  border-bottom: medium solid black;
+  list-style: none;
+  letter-spacing: 3px;
+  padding: 0;
+  margin: 0;
+}
+
+/* hamburger menu */
+
+.hamburger {
+  display: block;
+  width: 30px;
+  height: 10px;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  bottom: 0;
+  width: 70%;
+}
+
+.site-title,
+.year-title {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #header ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-title,
+  .year-title {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .hamburger {
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .site-title,
+  .year-title {
+    font-size: 1.5rem;
+  }
+
+  .hamburger {
+    margin-left: 0;
+  }
+}
+
+/* OFFCANVAS/SIDEBAR */
+
+#offcanvas {
+  margin: 0;
+  padding: 0;
+}
+
+#offcanvas-header {
+  margin: 0;
+}
+
+.offcanvas-body {
+}
+
+body.mode-dark .nav-link {
+  color: #ffffff;
+}
+
+body.mode-dark .socials-container i {
+  color: #ffffff;
+}
+
+#offcanvas p {
+  border-bottom: solid medium black;
+}
+
+#offcanvas ul {
+  border: none;
+  font-size: 20px;
+}
+
+#offcanvas li {
+  margin-bottom: 18px;
+}
+
+#offcanvas li:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.15s;
+}
+
+#offcanvasLabel {
+  letter-spacing: 3px;
+}
+
+.socials-container {
+  position: relative;
+  top: 200px;
+}
+
+.bi-envelope-fill {
+  color: rgb(40, 40, 40);
+}
+
+.bi-linkedin {
+  color: rgb(40, 40, 40);
+}
+
+.bi-github {
+  color: rgb(40, 40, 40);
+}
+
+.bi-instagram {
+  color: rgb(40, 40, 40);
+}
+
+@media (max-width: 500px) {
+  #offcanvas {
+    width: 100%;
+  }
+}
+
+/* HERO SECTION */
+
+#hero {
+  margin: 0;
+  padding: 0;
+}
+
+#hero h1 {
+  font-size: 13vw;
+  font-weight: bold;
+}
+
+/* Keyframes for fade-in from bottom animation */
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the heading */
+.main-heading {
+  opacity: 0; /* Start hidden */
+  animation: fadeInBottom 1s ease-in-out forwards; /* 2s for a slower fade-in, adjust as needed */
+}
+
+/* .main-heading {
+  font-size: 170px;
+  letter-spacing: 5px;
+} */
+
+/* .main-heading {
+  font-size: 15vw;
+  letter-spacing: 5px;
+} */
+
+/* @media (max-width: 768px) {
+  .main-heading {
+    font-size: 15vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-heading {
+    font-size: 20vw;
+  }
+} */
+
+#carousel {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+/* ABOUT */
+#about {
+  margin: 0;
+  padding: 0;
+}
+
+.about-button {
+  letter-spacing: 1px;
+}
+
+.about-text-container {
+  background-color: rgb(32, 37, 41);
+  color: white;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1.2s ease-out, opacity 2s ease-out;
+}
+
+.diamond-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 1.2s ease-out, opacity 2s ease-out;
+}
+
+.circle {
+  fill: rgb(32, 37, 41);
+}
+
+.circle:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.15s;
+  cursor: pointer;
+}
+
+.circle-2:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.15s;
+  cursor: pointer;
+}
+
+.bi-diamond-half {
+  margin: 5px 5px;
+}
+
+.slide-in-left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-in-right {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* PROJECTS AND CASE STUDIES */
+
+#projects {
+  margin: 0;
+  padding: 0;
+}
+
+.projects-heading {
+  letter-spacing: 5px;
+}
+
+/* cards */
+
+.card {
+  margin: 0;
+  padding: 0;
+}
+
+.card-img-top {
+  height: 300px;
+  overflow: hidden;
+}
+
+.card-img-top img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  height: 280px;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.live-view {
+  margin: 0;
+}
+
+.card-button {
+  margin: 0;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-2-top {
+  background-color: lightgreen;
+}
+
+/* MODALS */
+#modal {
+  margin: 0;
+}
+
+/* DD-DISPLAY */
+#dd-display {
+  display: none;
+}
+
+/* SKILLS SECTION */
+
+#skills {
+  margin: 0;
+  padding: 0;
+}
+
+/* SKILLS-SECTION */
+#skills {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+#skills .display-3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#skills .lead {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.skills-description {
+}
+
+#skills .bi {
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#skills h3 {
+  font-size: 1.75rem;
+  margin-top: 20px;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  border: none;
+}
+
+#skills ul li {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+/* progress bars */
+.progress {
+  background: lightgray;
+  height: 5px;
+  width: 80%;
+}
+
+.progress-bar {
+  background-color: rgb(40, 40, 40);
+  width: 90%;
+}
+
+.figma-bar {
+  width: 92%;
+}
+
+.canva-bar {
+  width: 90%;
+}
+
+.just-bar {
+  width: 92%;
+}
+
+.lr-bar {
+  width: 95%;
+}
+
+.html-bar {
+  width: 95%;
+}
+
+.css-bar {
+  width: 95%;
+}
+
+.bs-bar {
+  width: 95%;
+}
+
+.js-bar {
+}
+
+/* marquee */
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-item {
+  text-align: center;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 20%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-container:hover .marquee {
+  animation-direction: reverse;
+  transition: all ease-in-out 0.15s;
+}
+
+/* CONTACT PAGE */
+
+.contact-row {
+  background-color: #efefef;
+}
+
+.contact-form-container {
+  width: 100%;
+  height: 50%;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+}
+
+.footer-row {
+  height: 400px;
+}
+
+#footer .nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* GALLERY */
+#gallery {
+  background-color: #ececec;
+}
+
+#gallery img:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.15s;
+}
+
+/* DARK MODE */
+/* PORTFOLIO.CSS */
+
+/* Custom styles for the toggle switch */
+.form-check-input:checked {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: rgb(18, 18, 18);
+  color: #ffffff;
+}
+
+/* HEADER */
+
+body.dark-mode #header {
+  margin: 0;
+  padding: 0;
+}
+
+body.dark-mode #header ul {
+  line-height: 40px;
+  border-bottom: medium solid #efefef;
+  list-style: none;
+  letter-spacing: 3px;
+  padding: 0;
+  margin: 0;
+}
+
+/* hamburger menu */
+
+body.dark-mode .hamburger {
+  display: block;
+  width: 30px;
+  height: 10px;
+  position: relative;
+}
+
+body.dark-mode .hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #efefef;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .hamburger span:nth-child(1) {
+  top: 0;
+}
+
+body.dark-mode .hamburger span:nth-child(2) {
+  bottom: 0;
+  width: 70%;
+}
+
+.site-title,
+.year-title {
+  text-align: center;
+  font-size: 0.1rem;
+}
+
+/* OFFCANVAS/SIDEBAR */
+
+body.dark-mode #offcanvas {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+body.dark-mode #offcanvas-header {
+  color: white;
+}
+
+body.dark-mode #offcanvas p {
+  border-bottom: solid medium white;
+}
+
+body.dark-mode #offcanvas ul {
+  border: none;
+  font-size: 20px;
+}
+
+#offcanvas li {
+  margin-bottom: 18px;
+}
+
+body.dark-mode #offcanvas li:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.15s;
+}
+
+#offcanvasLabel {
+  letter-spacing: 3px;
+}
+
+body.dark-mode .socials-container {
+  position: relative;
+  top: 200px;
+}
+
+body.dark-mode .bi-envelope-fill {
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode .bi-linkedin {
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode .bi-github {
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode .bi-instagram {
+  color: rgb(255, 255, 255);
+}
+
+/* HERO SECTION */
+
+body.dark-mode #hero {
+  margin: 0;
+  padding: 0;
+}
+
+body.dark-mode .main-heading {
+  font-size: 170px;
+  letter-spacing: 5px;
+}
+
+body.dark-mode .main-heading {
+  font-size: 10vw; /* Adjust the font size based on viewport width */
+  letter-spacing: 5px;
+}
+
+/* ABOUT */
+
+body.dark-mode .about-text-container {
+  background-color: rgb(30, 30, 30);
+}
+
+.about-button {
+  letter-spacing: 1px;
+}
+
+/* DOUBLE DIAMOND ANIMATION*/
+
+body.dark-mode .diamond-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark-mode .circle {
+  fill: rgb(30, 30, 30);
+}
+
+body.dark-mode .circle:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.15s;
+  cursor: pointer;
+}
+
+body.dark-mode .circle-2:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.15s;
+  cursor: pointer;
+}
+
+body.dark-mode .bi-diamond-half {
+  margin: 5px 5px;
+  fill: rgb(30, 30, 30);
+}
+
+/* PROJECTS AND CASE STUDIES */
+
+#projects {
+  margin: 0;
+  padding: 0;
+}
+
+.projects-heading {
+  letter-spacing: 5px;
+}
+
+/* cards */
+
+body.dark-mode .card {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+body.dark-mode .card:hover {
+  background-color: rgb(40, 40, 40);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  height: 300px;
+  overflow: hidden;
+}
+
+.card-img-top img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  height: 260px;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+body.dark-mode .card-button {
+  color: white;
+  background-color: rgb(54, 54, 54);
+}
+
+body.dark-mode .card-button:hover {
+  margin: 0;
+}
+
+/* MODALS */
+#modal {
+  margin: 0;
+}
+
+body.dark-mode .modal-content {
+  background-color: rgb(40, 40, 40);
+}
+
+body.dark-mode .modal .list-group {
+  background-color: rgb(55, 55, 55);
+}
+
+body.dark-mode .modal .list-group-item {
+  background-color: rgb(55, 55, 55);
+  border: none;
+  color: white;
+}
+
+/* DD-DISPLAY */
+body.dark-mode #dd-display {
+  display: flex;
+}
+
+/* SKILLS-SECTION */
+body.dark-mode #skills {
+  background-color: rgb(18, 18, 18);
+  padding: 60px 0;
+}
+
+#skills .display-3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#skills .lead {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.skills-description {
+  height: 150px;
+}
+
+#skills .bi {
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#skills h3 {
+  font-size: 1.75rem;
+  margin-top: 20px;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  border: none;
+}
+
+#skills ul li {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+/* progress bars */
+body.dark-mode .progress {
+  background: lightgray;
+  height: 5px;
+  width: 80%;
+  border: none;
+}
+
+body.dark-mode .progress-bar {
+  background-color: rgb(40, 40, 40);
+  border: none;
+  width: 90%;
+}
+
+/* marquee */
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-item {
+  text-align: center;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 20%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-container:hover .marquee {
+  animation-direction: reverse;
+  transition: all ease-in-out 0.15s;
+}
+
+/* CONTACT PAGE */
+body.dark-mode .contact-form-container {
+  width: 100%;
+  height: 50%;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+}
+
+.footer-row {
+  height: 400px;
+}
+
+#footer .nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}

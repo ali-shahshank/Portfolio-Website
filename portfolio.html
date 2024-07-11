@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--Bootstrap5-icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!--JavaScript-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--custom-css-->
+    <link rel="stylesheet" href="portfolio.css" />
+    <!--GOOGLE FONTS-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--dark-mode-css-->
+    <link rel="stylesheet" href="dark-mode.css" />
+    <!--js-->
+    <script src="/portfolio.js"></script>
+    <title>Modern Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR & HEADER -->
+    <section id="header">
+      <div class="container-fluid p-4">
+        <ul class="d-flex align-items-center justify-content-between">
+          <li>
+            <a
+              class="btn"
+              data-bs-toggle="offcanvas"
+              href="#offcanvas"
+              role="button"
+            >
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+          </li>
+          <li class="site-title fs-6">CREATIVE DEVELOPER</li>
+          <li class="year-title fs-6">SHAHSHANK 2024</li>
+        </ul>
+      </div>
+
+      <!-- Sidebar -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvas"
+        aria-labelledby="offcanvasLabel"
+      >
+        <div class="offcanvas-header" id="offcanvas-header">
+          <h2 id="offcanvasLabel">Creative Developer</h2>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dark-mode-button d-flex justify-content-end">
+            <div class="form-check form-switch fs-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="darkModeToggle"
+              />
+              <label class="form-check-label" for="darkModeToggle"></label>
+            </div>
+          </div>
+
+          <p class="lead p-2">Menu</p>
+          <ul class="mt-5 p-3 text-center">
+            <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link" target="_blank">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="/assets/RESUME-2023 copy.pdf"
+                target="_blank"
+                class="nav-link"
+                >Resume</a
+              >
+            </li>
+          </ul>
+          <div
+            class="container socials-container p-4 mt-5 d-flex align-items-center justify-content-center text-center"
+            style="font-size: 25px"
+          >
+            <a href="mailto:ali.a.a.shah@outlook.com" target="_blank"
+              ><i class="bi bi-envelope-fill m-4"></i
+            ></a>
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bi bi-linkedin m-4"></i
+            ></a>
+            <a href="https://github.com" target="_blank">
+              <i class="bi bi-github m-4"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="bi bi-instagram m-4"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--HERO-SECTION-->
+    <section id="hero">
+      <div class="container-fluid p-4">
+        <div class="row">
+          <div class="col- col-sm-12 col-md-12">
+            <h1 class="main-heading">PORTFOLIO</h1>
+          </div>
+        </div>
+      </div>
+
+      <!--profile-img-->
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-6 p-5 d-flex justify-content-start align-items-center"
+          ></div>
+          <div class="col-sm-12 col-md-4 p-4">
+            <img
+              src="/IMAGES/About-me 3.48.32 PM.jpeg"
+              alt=""
+              class="img-fluid rounded-3"
+            />
+          </div>
+          <div class="col-sm-12 col-md-2 p-4"></div>
+        </div>
+        <!-- <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active"
+              style="
+                background-image: url('/IMAGES/portfolio.jpeg');
+                background-size: cover;
+              "
+              loading="lazy"
+            ></div>
+            <div
+              class="carousel-item"
+              style="
+                background-image: url('/IMAGES/portfolio-img.jpg');
+                background-size: cover;
+              "
+              loading="lazy"
+            ></div>
+            <div
+              class="carousel-item"
+              style="
+                background-image: url(/IMAGES/Jen.jpg);
+                background-size: cover;
+              "
+              loading="lazy"
+            ></div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!--ABOUT-ME-SECTION-->
+    <section id="about">
+      <div class="container-fluid p-4">
+        <div class="row justify-content-center align-items-center">
+          <!-- Column for the text content -->
+          <div class="col-md-8 col-sm-12 mb-4 p-4 rounded about-text-container">
+            <h5>Hello!</h5>
+            <h2>I am Ali,</h2>
+            <h1 class="display-5">Frontend Developer & Designer</h1>
+            <p class="lead">
+              A versatile professional blending the worlds of web development
+              and design. With a strong foundation in HTML, CSS, Bootstrap and
+              JavaScript, coupled with a flair for UI/UX design. I am passionate
+              about creating solutions and bringing my creativity to life.
+            </p>
+            <button
+              class="about-button btn btn-outline-light rounded-pill btn-lg mt-3 px-4 fw-light"
+            >
+              Learn More <i class="bi bi-arrow-right ms-3"></i>
+            </button>
+          </div>
+          <!-- Column for the SVG images -->
+          <div class="col-md-4 col-sm-12 mb-4 text-center align-items-center">
+            <div
+              class="p-4 dd-bg"
+              style="height: 300px; background-color: transpare"
+            >
+              <!-- SVG images -->
+              <!--circle-one-->
+              <div class="container diamond-container">
+                <svg
+                  fill="grey"
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 56 56"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="circle"
+                >
+                  <path
+                    d="M 27.9999 51.9063 C 41.0546 51.9063 51.9063 41.0781 51.9063 28 C 51.9063 14.9453 41.0312 4.0937 27.9765 4.0937 C 14.8983 4.0937 4.0937 14.9453 4.0937 28 C 4.0937 41.0781 14.9218 51.9063 27.9999 51.9063 Z"
+                  />
+                </svg>
+                <!--diamond-one-->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="150"
+                  height="150"
+                  fill="currentColor"
+                  class="bi bi-diamond-half"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM8 .989c.127 0 .253.049.35.145l6.516 6.516a.495.495 0 0 1 0 .7L8.35 14.866a.5.5 0 0 1-.35.145z"
+                  />
+                </svg>
+
+                <!--diamond-two-->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="150"
+                  height="150"
+                  fill="currentColor"
+                  class="bi bi-diamond-half"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM8 .989c.127 0 .253.049.35.145l6.516 6.516a.495.495 0 0 1 0 .7L8.35 14.866a.5.5 0 0 1-.35.145z"
+                  />
+                </svg>
+
+                <!--circle-two-->
+                <svg
+                  fill="grey"
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 56 56"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="circle"
+                >
+                  <path
+                    d="M 27.9999 51.9063 C 41.0546 51.9063 51.9063 41.0781 51.9063 28 C 51.9063 14.9453 41.0312 4.0937 27.9765 4.0937 C 14.8983 4.0937 4.0937 14.9453 4.0937 28 C 4.0937 41.0781 14.9218 51.9063 27.9999 51.9063 Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS-SECTION -->
+    <section id="projects">
+      <div class="container-fluid mt-5 p-4">
+        <div class="row">
+          <div class="col-md-8 p-4 text-start mt-5 mb-5">
+            <h3 class="display-5">
+              <strong class="fw-bold">WORKS</strong> <br />
+              & CASE STUDIES
+            </h3>
+          </div>
+          <div class="col-md-4 p-4 text-center"></div>
+
+          <!--card-container-1-->
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 p-4">
+              <div class="card card-one" id="card-one">
+                <div class="card-img-top">
+                  <img
+                    src="/IMAGES/meta-quest.jpg"
+                    class="img-fluid w-100 rounded-top"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">Virtuality</h2>
+                  <p class="lead">Web Design & Development</p>
+                  <p class="card-text lead">
+                    <strong>Client:</strong> Virtuality <br />
+                    <strong>Industry:</strong> Virtual Reality Technology <br />
+                    <strong>Project:</strong> Web Application Design and
+                    Development
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark card-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-1"
+                  >
+                    Case Study
+                    <i class="bi bi-arrow-right ms-3"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--card-one-modal-->
+
+            <!-- Modal-1 -->
+            <div
+              class="modal modal-lg fade"
+              id="modal-1"
+              tabindex="modal-1"
+              aria-labelledby="Modal-1-Label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div
+                    class="modal-header d-flex align-items-center justify-content-between"
+                  >
+                    <h4 class="modal-title fs-5 fw-light" id="Modal-1-Label">
+                      Virtuality Case Study
+
+                      <i
+                        class="bi bi-badge-vr-fill text-primary ms-3 display-6"
+                      ></i>
+                    </h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5 class="fs-2 fw-medium">Project Overview</h5>
+                    <p class="lead">
+                      <strong>Client:</strong> Virtuality <br />
+                      <strong> Industry:</strong> Virtual Reality Technology
+                      <br />
+                      <strong>Project:</strong> Web Application Design,
+                      Development & Deployment
+                    </p>
+                    <h6 class="fs-4 fw-medium">About Virtuality</h6>
+                    <p class="lead">
+                      Virtuality is at the forefront of the VR technology,
+                      providing cutting-edge hardware and software solutions.
+                      Their expertise spans various sectors including
+                      healthcare, FPV (First Person View) drones, education, and
+                      entertainment. Virtuality is renowned for its innovative
+                      approach, delivering immersive and transformative VR
+                      experiences that push the boundaries of what's possible.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Project Description</h6>
+                    <p class="lead">
+                      I had the pleasure of collaborating with Virtuality on an
+                      exciting project: designing and developing their web
+                      application from the ground up. The goal was to create a
+                      seamless and engaging online platform that showcases their
+                      wide array of VR solutions and products, while also
+                      providing an intuitive user experience for their diverse
+                      clientele.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Key Responsibilities <i></i></h6>
+                    <p class="lead">
+                      <strong>Requirement Analysis:</strong> Conducted thorough
+                      research and gathered requirements to understand
+                      Virtuality’s needs and objectives. <br />
+                      <strong>UI/UX Design:</strong>Crafted user-centric designs
+                      that are both visually appealing and functional. <br />
+                      <strong>Development: </strong> Implemented the web
+                      application using modern web technologies. <br />
+                      <strong>Integration:</strong>
+                      Integrated various VR-related content and functionalities,
+                      including product showcases and interactive elements.
+                      <br />
+                      <strong>Testing:</strong> Conducted extensive testing to
+                      ensure the application is bug-free and provides a smooth
+                      user experience. <br />
+                      <strong>Launch and Support:</strong>Assisted with the
+                      deployment of the web application and provided ongoing
+                      support.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Technologies:</h6>
+
+                    <ul
+                      class="list-group lead p-4 modal-technologies m-2"
+                      style="border: none"
+                    >
+                      <li class="list-group-item">
+                        <strong>Front-End:</strong> HTML5, CSS3, Bootstrap5,
+                        JavaScript, React.js
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Back-End: </strong> Node.js
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Database:</strong> MySQL
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Design:</strong> Figma, AdobeXD, Adobi Ai
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Testing:</strong> Selenium & Jest
+                      </li>
+                    </ul>
+                    <h6 class="fs-4 fw-medium">Project Highlights:</h6>
+                    <p class="lead">
+                      <strong>User-Centric Design:</strong> Focused on creating
+                      an intuitive and engaging interface that highlights
+                      Virtuality’s innovative VR solutions. <br />
+                      <strong>Responsive Design:</strong>
+                      Ensured the application is fully responsive, providing an
+                      optimal experience on desktops, tablets, and smartphones.
+                      <br />
+                      <strong>Performance Optimization:</strong> Implemented
+                      best practices for performance optimization, resulting in
+                      a fast and efficient web application. <br /><strong
+                        >Interactive Elements:</strong
+                      >
+                      Integrated interactive VR content, allowing users to
+                      explore Virtuality’s products and solutions in a dynamic
+                      way.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Outcome:</h6>
+                    <p class="lead">
+                      The successful launch of Virtuality’s web application
+                      significantly enhanced their online presence, providing a
+                      comprehensive platform for showcasing their VR technology.
+                      The intuitive and interactive design received positive
+                      feedback from both the client and their users,
+                      contributing to increased engagement and interest in
+                      Virtuality’s offerings.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      <a
+                        href="https://google.com"
+                        target="_blank"
+                        class="nav-link"
+                        >Project Live View
+                        <i class="bi bi-chevron-right ms-3"></i
+                      ></a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--card-container-2-->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 p-4">
+              <div class="card card-2">
+                <div class="card-img-top bg-light">
+                  <div class="container-fluid p-0 d-flex">
+                    <div class="col- bg-warning">
+                      <img src="/IMAGES/onyx.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                  <div class="col- p-3 h-100 w-100 card-2-top"></div>
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">OnyX</h2>
+                  <p class="lead">Web Design & Development</p>
+                  <p class="card-text lead">
+                    <strong>Client:</strong> Onxy Designs <br />
+                    <strong>Industry:</strong> Web Design Agency <br />
+                    <strong>Project:</strong> Web Application Design and
+                    Development
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark card-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-2"
+                  >
+                    Case Study
+                    <i class="bi bi-arrow-right ms-3"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal-2 -->
+            <div
+              class="modal modal-lg fade"
+              id="modal-2"
+              tabindex="modal-1"
+              aria-labelledby="Modal-1-Label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div
+                    class="modal-header d-flex align-items-center justify-content-between"
+                  >
+                    <h4 class="modal-title fs-5 fw-light" id="Modal-2-Label">
+                      Onyx Case Study
+
+                      <i class="bi bi-circle-fill text-dark ms-3 fs-4"></i>
+                    </h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5 class="fs-2 fw-medium">Project Overview</h5>
+                    <p class="lead">
+                      <strong>Client:</strong> Onyx Designs.<br />
+                      <strong> Industry:</strong> Information Technology.
+                      <br />
+                      <strong>Project:</strong> Web Application Design &
+                      Development.
+                    </p>
+                    <h6 class="fs-4 fw-medium">About Onyx Designs</h6>
+                    <p class="lead">
+                      Onyx Designs is a leading web design and development
+                      agency dedicated to delivering modern, cutting-edge
+                      solutions. Our team specializes in creating visually
+                      stunning and user-friendly websites that embody
+                      contemporary design principles. With a strong emphasis on
+                      SEO and digital marketing, we ensure that your website not
+                      only looks exceptional but also ranks highly in search
+                      engine results. Our comprehensive list of services
+                      includes custom web development, responsive design,
+                      e-commerce solutions, and ongoing maintenance. At Onyx
+                      Designs, we are committed to helping businesses grow by
+                      providing tailored strategies that drive traffic, engage
+                      users, and enhance online presence.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Project Description</h6>
+                    <p class="lead">
+                      As the Product Design Lead and Senior Web Developer at
+                      Onyx Designs, I spearheaded the revamp of our primary web
+                      application. Tasked with enhancing user experience and
+                      modernizing the site’s functionality, I led a
+                      cross-functional team through design iterations, frontend
+                      and backend development, and rigorous testing phases. By
+                      implementing responsive design principles and optimizing
+                      for SEO, we successfully improved usability and search
+                      engine visibility. This project showcases my dual
+                      expertise in UX/UI design and technical web development,
+                      delivering a sleek, high-performance website that aligns
+                      with Onyx Designs’ innovative brand vision.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Key Responsibilities <i></i></h6>
+                    <p class="lead">
+                      <strong>Requirement Analysis:</strong> Conducted thorough
+                      research and gathered requirements to understand agency's
+                      needs and objectives. <br />
+                      <strong>UI/UX Design:</strong>Crafted user-centric designs
+                      that are both visually appealing and functional. <br />
+                      <strong>Development: </strong> Implemented the web
+                      application using modern web technologies. <br />
+                      <strong>Integration:</strong>
+                      This project was mainly a frontend project with some
+                      backend integration such as form submission user data
+                      processing. Request processing.
+                      <br />
+                      <strong>Testing:</strong> Conducted extensive testing to
+                      ensure the application is bug-free and provides a smooth
+                      user experience. <br />
+                      <strong>Launch and Support:</strong>Assisted with the
+                      deployment of the web application and provided ongoing
+                      support.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Technologies:</h6>
+
+                    <ul
+                      class="list-group lead p-4 modal-technologies m-2"
+                      style="border: none"
+                    >
+                      <li class="list-group-item">
+                        <strong>Front-End:</strong> HTML5, CSS3, Bootstrap5,
+                        JavaScript, React.js
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Back-End: </strong> Node.js
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Database:</strong> MySQL
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Design:</strong> Figma
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Testing:</strong> Selenium & Jest
+                      </li>
+                    </ul>
+                    <h6 class="fs-4 fw-medium">Project Highlights:</h6>
+                    <p class="lead">
+                      <strong>User-Centric Design:</strong> Focused on creating
+                      an intuitive and engaging interface that highlights Onyx's
+                      Design theory. <br />
+                      <strong>Responsive Design:</strong>
+                      Utilized bootstrap5 grid system to ensure the application
+                      is fully responsive, providing an optimal experience on
+                      desktops, tablets, and smartphones.
+                      <br />
+                      <strong>Performance Optimization:</strong> Implemented
+                      best practices for performance optimization, resulting in
+                      a fast and efficient web application. <br />
+                      <strong>Interactive Elements:</strong>
+                      Integrated interactive content, allowing users to learn
+                      more about Onyx products and services.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Outcome:</h6>
+                    <p class="lead">
+                      Following the launch of the Onyx web app, user engagement
+                      surged by 40%, supported by a 30% increase in conversion
+                      rates. The app's seamless performance and enhanced UI/UX
+                      solidified its position as a cornerstone of Onyx Designs'
+                      digital strategy, driving substantial business growth.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--card-container-3-->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 p-4">
+              <div class="card">
+                <div class="card-img-top bg-light">
+                  <img
+                    src="/IMAGES/portfolio.jpeg"
+                    class="img-fluid w-100 rounded-top"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">Porta</h2>
+                  <p class="lead">Web Design & Development</p>
+                  <p class="card-text lead">
+                    <strong>Client:</strong> Porta Inc. <br />
+                    <strong>Industry:</strong> Information Technology <br />
+                    <strong>Project:</strong> Web Application Design and
+                    Development
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark card-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-3"
+                  >
+                    Case Study
+                    <i class="bi bi-arrow-right ms-3"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal-3 -->
+            <div
+              class="modal modal-lg fade"
+              id="modal-3"
+              tabindex="modal-3"
+              aria-labelledby="Modal-1-Label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div
+                    class="modal-header d-flex align-items-center justify-content-between"
+                  >
+                    <h4 class="modal-title fs-5 fw-light" id="Modal-2-Label">
+                      Porta Case Study
+
+                      <i class="bi bi-code-slash text-dark ms-3 fs-4"></i>
+                    </h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5 class="fs-2 fw-medium">Project Overview</h5>
+                    <p class="lead">
+                      <strong>Client:</strong> Porta<br />
+                      <strong> Industry:</strong> Information Technology.
+                      <br />
+                      <strong>Project:</strong> Web Application Design &
+                      Development.
+                    </p>
+                    <h6 class="fs-4 fw-medium">About Porta</h6>
+                    <p class="lead">
+                      Discover how Porta, a distinguished web design and
+                      development agency based in New York, transformed digital
+                      landscapes with bespoke solutions. Delve into our case
+                      study to explore how we elevated client success through
+                      innovative design and strategic development strategies.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Project Description</h6>
+                    <p class="lead">
+                      At Porta, I played a pivotal role in spearheading the
+                      design and development of their flagship web application.
+                      As the Lead Web Application Designer and Developer, I
+                      oversaw the project from inception to completion, ensuring
+                      seamless user experience and robust functionality.
+                      Leveraging my expertise in frontend and backend
+                      technologies, I implemented innovative features and
+                      integrations that enhanced the application's performance
+                      and scalability. Additionally, I took charge of managing
+                      the Content Management System (CMS), streamlining content
+                      updates and optimizing workflows for efficiency. This dual
+                      responsibility allowed Porta to maintain a dynamic online
+                      presence while empowering internal teams with intuitive
+                      content management capabilities. Explore how our
+                      collaborative efforts at Porta redefined digital
+                      engagement and elevated user satisfaction through
+                      strategic design and technological innovation.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Key Responsibilities <i></i></h6>
+                    <p class="lead">
+                      <strong>Web Design:</strong> Conducted thorough research
+                      and gathered requirements to understand agency's needs and
+                      objectives. <br />
+                      <strong>UI Design:</strong>Crafted user-centric designs
+                      that are both visually appealing and functional. <br />
+                      <strong>Development: </strong> Implemented the web
+                      application using modern web technologies. <br />
+                      <strong>Integration:</strong>
+                      Integrated various third party tools and technologies.
+                      Including some of our partner network products and
+                      services.
+                      <br />
+                      <strong>Testing:</strong> Conducted extensive testing to
+                      ensure the application is bug-free and provides a smooth
+                      user experience. <br />
+                      <strong>Launch and Support:</strong>Assisted with the
+                      deployment on AWS of the web application and provided
+                      ongoing support.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Technologies:</h6>
+
+                    <ul
+                      class="list-group lead p-4 modal-technologies m-2"
+                      style="border: none"
+                    >
+                      <li class="list-group-item">
+                        <strong>Front-End:</strong> HTML5, CSS3, Bootstrap5,
+                        JavaScript, React.js
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Back-End: </strong>AWS EC2,Node.js
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Database:</strong> Mongo DB, neptune
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Design:</strong> Figma
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Testing:</strong> Selenium & Jest
+                      </li>
+                    </ul>
+                    <h6 class="fs-4 fw-medium">Project Highlights:</h6>
+                    <p class="lead">
+                      <strong>User-Centric Design:</strong> Focused on creating
+                      an intuitive and engaging interface that highlights
+                      Porta's product efficiency. <br />
+                      <strong>Responsive Design:</strong>
+                      Utilized bootstrap5 grid system to ensure the
+                      application's responsiveness, providing an optimal user
+                      experience.
+                      <br />
+                      <strong>Performance Optimization:</strong> Implemented
+                      best practices for performance optimization, resulting in
+                      a fast and efficient web application. Utilized various
+                      light weight technologies to enhance the performance of
+                      the application. <br />
+                      <strong>Interactive Elements:</strong>
+                      Integrated interactive content, allowing users to learn
+                      more about Porta's products and services.
+                    </p>
+                    <h6 class="fs-4 fw-medium">Outcome:</h6>
+                    <p class="lead">
+                      With the launch of the Porta's web app, we achieved
+                      outstanding results, significantly enhancing user
+                      engagement and satisfaction. The strategic integration of
+                      modern design, advanced development practices, and robust
+                      SEO capabilities led to a 40% increase in organic traffic,
+                      a 25% boost in conversion rates, and a 30% reduction in
+                      bounce rates. Additionally, the website's performance
+                      metrics improved, with page load times decreasing by 20%,
+                      resulting in a smoother and more efficient user
+                      experience.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-container-4
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 p-4">
+              <div class="card">
+                <div class="card-img-top">
+                  <img
+                    src="/IMAGES/fons-heijnsbroek.jpg"
+                    class="img-fluid w-100 rounded-top"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">Virtuality</h2>
+                  <p class="lead">Web Design & Development</p>
+                  <p class="card-text lead">
+                    <strong>Client:</strong> Virtuality <br />
+                    <strong>Industry:</strong> Virtual Reality Technology <br />
+                    <strong>Project:</strong> Web Application Design and
+                    Development
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark card-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-1"
+                  >
+                    Case Study <i class="bi bi-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            -->
+            <!--card-container-5
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 p-4">
+              <div class="card">
+                <div class="card-img-top">
+                  <img
+                    src="/IMAGES/jeremy-bishop.jpg"
+                    class="img-fluid w-100 rounded-top"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">Virtuality</h2>
+                  <p class="lead">Web Design & Development</p>
+                  <p class="card-text lead">
+                    <strong>Client:</strong> Virtuality <br />
+                    <strong>Industry:</strong> Virtual Reality Technology <br />
+                    <strong>Project:</strong> Web Application Design and
+                    Development
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark card-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-1"
+                  >
+                    Case Study <i class="bi bi-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            -->
+            <!--card-container-6
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 p-4">
+              <div class="card">
+                <div class="card-img-top">
+                  <img
+                    src="/IMAGES/Jen.jpg"
+                    class="img-fluid w-100 rounded-top"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">Virtuality</h2>
+                  <p class="lead">Web Design & Development</p>
+                  <p class="card-text lead">
+                    <strong>Client:</strong> Virtuality <br />
+                    <strong>Industry:</strong> Virtual Reality Technology <br />
+                    <strong>Project:</strong> Web Application Design and
+                    Development
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark card-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-1"
+                  >
+                    Case Study <i class="bi bi-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--DOUBLE-DIAMOND-DISPLAY-->
+    <section id="dd-display">
+      <div class="container-fluid">
+        <img
+          src="/IMAGES/double-diamond.jpg"
+          alt="double-diamond-display"
+          class="img-fluid"
+        />
+      </div>
+    </section>
+
+    <!-- SKILLS-SECTION -->
+    <section id="skills">
+      <div class="container-fluid p-4">
+        <div class="row text-center">
+          <div class="col-md-12 mb-5">
+            <h2 class="display-5">Skills Overview</h2>
+            <h3 class="display-6">
+              Explore my professional expertise across various domains.
+            </h3>
+          </div>
+        </div>
+        <!-- SKILLS CONTAINERS -->
+        <div class="row text-start">
+          <!-- Design -->
+          <div
+            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 p-4 skills-container-one"
+          >
+            <!-- <i class="bi bi-palette-fill display-1"></i> -->
+            <h1 class="display-1">01</h1>
+            <h3 class="mt-3">Design</h3>
+            <p class="lead pb-2 skills-description">
+              I excel in creating visually captivating and user-friendly
+              interfaces using tools like Figma, AdobeXD, and PS Lightroom. With
+              a keen eye for detail and a passion for user experience, I craft
+              designs that not only look stunning but also enhance usability and
+              engagement.
+            </p>
+            <br />
+            <div class="bars py-2">
+              <ul class="dev-skills-ul" style="border: none">
+                <li class="text-start">
+                  <p class="my-1">Figma</p>
+                  <div class="progress" style="height: 5px">
+                    <div class="progress-bar progress-bar-sm figma-bar"></div>
+                  </div>
+                </li>
+                <li class="text-start">
+                  <p class="my-1">CANVA</p>
+                  <div class="progress" style="height: 5px">
+                    <div class="progress-bar progress-bar-sm canva-bar"></div>
+                  </div>
+                </li>
+                <li class="text-start">
+                  <p class="my-1">WEBFLOW</p>
+                  <div class="progress" style="height: 5px">
+                    <div class="progress-bar progress-bar-sm just-bar"></div>
+                  </div>
+                </li>
+                <li class="text-start">
+                  <p class="my-1">PS LIGHTROOM</p>
+                  <div class="progress" style="height: 5px">
+                    <div class="progress-bar progress-bar-sm lr-bar"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Front-End -->
+          <div
+            class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 p-4 skills-container-one"
+          >
+            <!-- <i class="bi bi-code-slash display-1"></i> -->
+            <h1 class="display-1">02</h1>
+            <h3 class="mt-3">Front-End</h3>
+            <p class="lead text-start pb-2 skills-description">
+              I specialize in HTML, CSS, Bootstrap 5, JavaScript, and renowned
+              libraries like React and jQuery. My focus is on crafting engaging,
+              creative solutions that adapt seamlessly to various platforms,
+              ensuring optimal functionality and responsiveness.
+            </p>
+            <br />
+            <div class="bars py-2">
+              <ul class="dev-skills-ul" style="border: none">
+                <li class="text-start">
+                  <p class="my-1">HTML 5</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-sm html-bar"></div>
+                  </div>
+                </li>
+                <li class="text-start">
+                  <p class="my-1">CSS 3</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-sm css-bar"></div>
+                  </div>
+                </li>
+                <li class="text-start">
+                  <p class="my-1">BOOTSTRAP 5</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-sm bs-bar"></div>
+                  </div>
+                </li>
+                <li class="text-start">
+                  <p class="my-1">JAVASCRIPT</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-sm js-bar"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Back-End -->
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 p-4">
+            <!-- <i class="bi bi-server display-1"></i> -->
+            <h1 class="display-1">03</h1>
+            <h3 class="mt-3">Back-End</h3>
+            <p class="pb-2 skills-description lead">
+              I specialize in crafting efficient server-side solutions using
+              Node.js, Express.js, and MongoDB and MySQL. With a focus on
+              scalability and performance, I ensure seamless integration with
+              frontend technologies, delivering comprehensive applications
+              tailored to client needs.
+            </p>
+            <br />
+            <div class="bars py-2">
+              <ul class="dev-skills-ul">
+                <li class="text-start">
+                  <p class="my-1">NODE.js</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-sm"></div>
+                  </div>
+                </li>
+                <li class="text-start">
+                  <p class="my-1">My-SQL</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-sm"></div>
+                  </div>
+                </li>
+                <li class="text-start">
+                  <p class="my-1">MONGO DB</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-sm"></div>
+                  </div>
+                </li>
+                <li class="text-start">
+                  <p class="my-1">AWS</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-sm"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MARQUEE-->
+      <div class="container-fluid p-4">
+        <div class="marquee-container">
+          <div class="marquee">
+            <div class="marquee-item">
+              <img
+                src="/assets/Figma.svg"
+                alt="Figma icon image"
+                height="100"
+                width="100"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/assets/adobe-xd-svgrepo-com.svg"
+                alt="Adobe XD icon image"
+                height="100"
+                width="100"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/assets/Photo-Shop.svg"
+                alt="Photo Shop Icon Image"
+                height="100"
+                width="100"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/assets/Figma.svg"
+                alt="Figma icon image"
+                height="100"
+                width="100"
+                class="just-in-mind-img"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/icons/behance.svg"
+                alt="behance round icon image"
+                height="100"
+                width="100"
+                fill="white"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/assets/light-room.svg"
+                alt="adobe lightroom icon image"
+                height="100"
+                width="100"
+                fill="white"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/assets/webflow-svgrepo-com.svg"
+                alt="canva rounded icon imag."
+                height="100"
+                width="100"
+                fill="white"
+              />
+            </div>
+            <div class="marquee-item">
+              <img
+                src="/assets/canva.png"
+                alt="canva rounded icon imag."
+                height="100"
+                width="100"
+                fill="white"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT-SECTION -->
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row contact-row">
+          <div
+            class="col-md-7 col-lg-7 bg-black text-light p-4 contact-container"
+          >
+            <h2 class="display-6 pt-5">Get In Touch!</h2>
+            <p class="lead">
+              I'm here to answer any questions you might have. Feel free to
+              reach out for collaborations, project inquiries, or just to say
+              hello. Your message is important to me, and I'll respond as soon
+              as possible.
+            </p>
+            <div
+              class="contact-form-container container d-flex align-items-center mt-5"
+            >
+              <!--from-->
+              <form class="form mt-5 text-dark w-100 p-4">
+                <!--f-name-->
+                <div class="form-floating mb-3 mt-3">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="f-name"
+                    placeholder="First Name"
+                    name="f-name"
+                    required
+                  />
+                  <label for="f-name">First Name</label>
+                </div>
+                <!--l-name-->
+                <div class="form-floating mb-3 mt-3">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="l-name"
+                    placeholder="l-name"
+                    name="l-name"
+                    required
+                  />
+                  <label for="l-name">Last Name</label>
+                </div>
+                <!--email-->
+                <div class="form-floating mb-3 mt-3">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="email"
+                    placeholder="Enter email"
+                    name="email"
+                    required
+                  />
+                  <label for="email">Email</label>
+                </div>
+                <!--comments-->
+                <div class="mb-3 mt-3">
+                  <textarea
+                    name="comments"
+                    id="comments"
+                    class="form-control form-control-lg"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <!--submit-button-->
+                <div class="mb-3 text-end">
+                  <button
+                    type="submit"
+                    class="form-submit-button btn btn-light btn-light-lg px-5 py-2"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="col-md-5 col-lg-5 p-4 text-light d-flex align-items-center justify-content-center bg-black"
+          >
+            <div class="container text-start text-light p-4">
+              <h2 class="text-center mb-5">Contact Info</h2>
+              <div class="container text-light">
+                <ul class="mb-3 border-bottom">
+                  <li class="list-group-item">
+                    <a href="mailto:ali.a.a.shah@outlook.com" class="nav-link">
+                      <strong>
+                        <i class="bi bi-envelope-fill text-light pe-3"></i
+                      ></strong>
+                      ali.a.a.shah@outlook.com
+                    </a>
+                  </li>
+                  <br />
+
+                  <li class="list-group-item">
+                    <strong>
+                      <i class="bi bi-geo-alt-fill pe-2"></i>
+                    </strong>
+                    1720 16 st NW, Brooklyn, NY, 22012
+                  </li>
+                  <br />
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-section-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row footer-row">
+          <!--footer-col-1-->
+          <div class="col-md-6 p-4">
+            <div class="container mt-5">
+              <h3 class="display-5 text-white fw-bold">#shahshank</h3>
+
+              <a
+                href="https://github.com"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <i class="bi bi-github text-white fs-2 me-3"></i>
+              </a>
+              <a
+                href="https://x.com"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <i class="bi bi-twitter text-white fs-2 me-3"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <i class="bi bi-instagram text-white fs-2 me-3"></i>
+              </a>
+            </div>
+          </div>
+          <!--footer-col-2-->
+          <div class="col-md-6 p-4">
+            <div class="container mt-5 d-flex justify-content-end">
+              <div class="input-group mb-3 w-100">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="Email"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-outline-light"
+                  type="button"
+                  id="button-addon2"
+                >
+                  SUBSCRIBE
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--footer-bottom-->
+          <div class="col- col-sm-12 col-md-12 bg-black">
+            <div class="container p-4">
+              <ul class="nav d-flex justify-content-around">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5 disabled"
+                    >All Rights Reserved &copy; 2024
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5"
+                    >Other Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5"
+                    >Collaborations</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white fs-5"
+                    ><i class="bi bi-chevron-up me-3"></i>To Top</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // JavaScript to handle dark mode toggle
+      document
+        .getElementById("darkModeToggle")
+        .addEventListener("change", function () {
+          document.body.classList.toggle("dark-mode");
+        });
+    </script>
+  </body>
+</html>
